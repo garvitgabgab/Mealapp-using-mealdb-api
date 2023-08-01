@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #1e4bdd;
+    background: linear-gradient(105deg, #f2eeee, #0808d4);
+  }
+  .container {
+    text-align: justify;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 0.5em 0.8em;
+    width: 50vw;
+    max-width: 100em;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.6em;
+    background: linear-gradient(55deg, #940ce9, #a88bc9);
+  }
+  .image {
+    margin-top: 190px;
+    margin-left: 270px;
+    border-radius: 50%;
+    border: #1e4bdd;
+    float: center;
+  }
+  /* .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 0%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  } */
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* .active, .collapsible:hover {
+    background-color: #af6666;
+  } */
+  
+  /* Style the collapsible content. Note: hidden by default */
+  /* .liked{
+    width: 25%;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  } */
+  
+  .favBtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .favBtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .favorites {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+/*main dish area*/
+.result
+{
+  text-align: left;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-gap: 10px;
+  width: 90%;
+  margin:n15px auto;
+  padding: 10px;
+  
+  border-radius: 10%;
+  
+}
+.recipe{
+  background-color: rgb(139, 142, 142);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+}
+.recipeBtn{
+  font-size: 10px;
+  background-color: rgb(159, 55, 55);
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+/* some extra styling to ingredients section */
+.result::-webkit-scrollbar{
+  width: 10px;
+
+}
+
+.recipe::-webkit-scrollbar-thumb{
+  background:rgb(71, 73, 73) ;
+}
+
+/*recipe details*/
+.recipe-info{
+  color: #ffffff;
+  padding: 9px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(19, 61, 215);
+  border-radius: 15px;
+  width: 40%;
+  height: 50%;
+  font-size: 12px ;
+  transition: all 0.5 ease-in-out;
+  overflow-y: scroll;
+}

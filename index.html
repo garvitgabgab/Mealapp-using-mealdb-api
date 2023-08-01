@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <button type="button" class="collapsible">Here are your Favs:</button>
+    <div>
+    
+    <ul>
+      <li class = "liked">djhskj</li>
+    </ul>
+    </div> -->
+    <div class="favorites">
+      <button onclick="showFav()" class="favBtn">Favorite Dishes</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li class = "liked"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="seacrh">
+        <h2> Meal app by Garvit <img class="image" src = "heading.jpg" width="150" 
+          height="150"></h2>
+        
+        <input
+          type="text"
+          placeholder="Type A NOM NOM Dish.."
+          class="inputBox"
+        />
+        <button class="inputBtn">Search</button>
+      </div>
+    </div>
+    <main>
+      <div class="result">
+      <div class="recipe-info">
+        <button type = "button" class ="recipeclose">&times</button>
+        <div class="content"> </div>
+        
+      </div>
+    </div>
+    </main>
+    
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
